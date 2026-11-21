@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #071c25, #16434a, #071c25);
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(#0008, #0009),
+    url("https://images.unsplash.com/photo-1511497584788-876760111969?w=1200");
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 55px;
+    color: #65ffe0;
+    text-shadow: 0 0 20px #00ffe1;
+}
+
+nav {
+    background: #08252d;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: #65ffe0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #65ffe0;
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+h3 {
+    color: #65ffe0;
+    margin: 15px;
+}
+
+p {
+    margin: 15px;
+}
+
+.container {
+    background: #123640;
+    margin: 30px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 0 10px #0008;
+}
+
+.container:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0 20px #00ffe1;
+}
+
+.container img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background: #091e27;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.container img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.2);
+    box-shadow: 0 0 20px #00ffe1;
+}
+
+.end {
+    text-align: center;
+    background: #123640;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ffe1;
+    margin: 40px 0;
+}
+
+footer {
+    background: #06151c;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 35px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .container img {
+        height: 230px;
+    }
+}
